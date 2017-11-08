@@ -64,7 +64,7 @@ UUCUCAUUUCGACACCGAAGCAGAG
 ./AptaBlocks -N 2 -l 10 -i ./Example/Input_universal_ssRNA_dsRNA.txt.txt -o ./Example/Output_universal_ssRNA_dsRNA.txt.txt 
 
 # Output file
-Take one aptamer and one ssRNA cargo for exampel, the output looks like:
+Take one aptamer and one ssRNA cargo for example, the output looks like:
 Aptamer: UACCUGGUACGCUGU # aptamer sequence + sticky brdige sequence B1
 RNA: CUCGGCCUUAACAGC # ssRNA sequence + sticky brdige sequence B2
 Probability with structure constraints: 0.90521 (<-probability of B1 unpaired) * 0.84481 (<-probability of B2 unpaired) = 0.76473 

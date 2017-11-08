@@ -55,13 +55,13 @@ UUCUCAUUUCGACACCGAAGCAGAG
 
 # Example of implement ApatBlocks
 1. For one aptamer and one ssRNA cargo:
-./AptaBlocks -N 1 -i ./Example/Input_ssRNA_cargo.txt -o ./Example/Output_ssRNA_cargo.txt 
+./AptaBlocks -N 1 -l 2.5 -i ./Example/Input_ssRNA_cargo.txt -o ./Example/Output_ssRNA_cargo.txt 
 
 2. For one aptamer and one dsRNA cargo:
-./AptaBlocks -N 1 -i ./Example/Input_dsRNA_cargo.txt -o ./Example/Output_dsRNA_cargo.txt 
+./AptaBlocks -N 1 -l 1.0 -i ./Example/Input_dsRNA_cargo.txt -o ./Example/Output_dsRNA_cargo.txt 
 
 3. For one aptamer and one ssRNA and one dsRNA (universal sticky bridge)
-./AptaBlocks -N 2 -i ./Example/Input_universal_ssRNA_dsRNA.txt.txt -o ./Example/Output_universal_ssRNA_dsRNA.txt.txt 
+./AptaBlocks -N 2 -l 10 -i ./Example/Input_universal_ssRNA_dsRNA.txt.txt -o ./Example/Output_universal_ssRNA_dsRNA.txt.txt 
 
 # Output file
 Take one aptamer and on ssRNA cargo for exampel, the output looks like:

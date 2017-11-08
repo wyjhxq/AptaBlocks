@@ -28,10 +28,15 @@
 
 For one aptamer and one ssRNA cargo: ./Example/Input_ssRNA_cargo.txt
 >Aptamer
+
 UACCUGGUACGGGGG
+
 **********xxxxx
+
 >ssRNA
+
 CUCGGCCUUACCCCC
+
 **********xxxxx
 
 For one aptamer and one dsRNA cargo: ./Example/Input_dsRNA_cargo.txt

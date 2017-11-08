@@ -40,10 +40,10 @@ void print_AptaBlocks_help() {
     printf(">Aptamer #'Aptamer' is a keyword to indicate the following is the sequence of an aptamer+SE");
     printf("AUGCCUUGGCCCAAUACCGGGGGGGGG # the sequence of an aptamer+SE\n");
     printf("***************...xxxxxxxxx # '*': fixed nuclitude, '.': a spacer between aptamer and SE, could be any nuclitude, 'x': a nuclitude in a sticky end\n");
-    printf(">RNA # 'RNA' is a keyword to indicate the following is only one strand\n");
+    printf(">ssRNA # 'RNA' is a keyword to indicate the following is only one strand\n");
     printf("ACCCCGGGGUUAACCGUUCCCCCCCCC\n");
     printf("******************xxxxxxxxx\n");
-    printf(">siRNA # 'siRNA' is a keyword to indicate the following contain the sense and anti-sense part of the siRNA\n");
+    printf(">dsRNA # 'siRNA' is a keyword to indicate the following contain the sense and anti-sense part of the siRNA\n");
     printf("CUCUGCUUCGGUGUCGAAAUGAGAACCCCCCCCCCC\n");
     printf("***************************xxxxxxxxx\n");
     printf("UUCUCAUUUCGACACCGAAGCAGAG\n");
@@ -91,24 +91,24 @@ void ReadInput(struct SE_Design *SEDesign, char FileName[], int kmer, int NumPai
                     Apta_Structure[strlen(line)-1] = '\0';
                     printf("Aptamer: %s\n", Apta_Structure);
                 }
-            }else if(strcmp(temp, "RNA") == 0){
+            }else if(strcmp(temp, "ssRNA") == 0){
                 read = getline(&line, &len, fh);
                 if (read != -1) {
                     strncpy(Temp1_Seq, line, strlen(line)-1);
                     Temp1_Seq[strlen(line)-1] = '\0';
-                    printf("RNA: %s\n", Temp1_Seq);
+                    printf("ssRNA: %s\n", Temp1_Seq);
                 }
                 read = getline(&line, &len, fh);
                 if (read != -1 && line[strlen(line)-1] == '\n') {
                     strncpy(Temp1_Structure, line, strlen(line)-1);
                     Temp1_Structure[strlen(line)-1] = '\0';
-                    printf("RNA: %s\n", Temp1_Structure);
+                    printf("ssRNA: %s\n", Temp1_Structure);
                 }else{
                     strcpy(Temp1_Structure, line);
                 }
                 Init_SEDesign(&SEDesign[count], Apta_Seq, Apta_Structure, Temp1_Seq, NULL, Temp1_Structure, 1, kmer);
                 count++;
-            }else if(strcmp(temp, "siRNA") == 0){
+            }else if(strcmp(temp, "dsRNA") == 0){
                 read = getline(&line, &len, fh);
                 if (read != -1) {
                     strncpy(Temp1_Seq, line, strlen(line)-1);

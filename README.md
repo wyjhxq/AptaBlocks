@@ -1,1 +1,1 @@
-# Detailed information is in Readme.txt
+# Detailed information is in ReadMe.txt

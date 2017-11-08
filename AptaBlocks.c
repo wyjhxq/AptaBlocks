@@ -40,10 +40,10 @@ void print_AptaBlocks_help() {
     printf(">Aptamer #'Aptamer' is a keyword to indicate the following is the sequence of an aptamer+SE");
     printf("AUGCCUUGGCCCAAUACCGGGGGGGGG # the sequence of an aptamer+SE\n");
     printf("***************...xxxxxxxxx # '*': fixed nuclitude, '.': a spacer between aptamer and SE, could be any nuclitude, 'x': a nuclitude in a sticky end\n");
-    printf(">ssRNA # 'RNA' is a keyword to indicate the following is only one strand\n");
+    printf(">ssRNA # 'ssRNA' is a keyword to indicate the following is only one strand\n");
     printf("ACCCCGGGGUUAACCGUUCCCCCCCCC\n");
     printf("******************xxxxxxxxx\n");
-    printf(">dsRNA # 'siRNA' is a keyword to indicate the following contain the sense and anti-sense part of the siRNA\n");
+    printf(">dsRNA # 'dsRNA' is a keyword to indicate the following contain the sense and anti-sense part of the siRNA\n");
     printf("CUCUGCUUCGGUGUCGAAAUGAGAACCCCCCCCCCC\n");
     printf("***************************xxxxxxxxx\n");
     printf("UUCUCAUUUCGACACCGAAGCAGAG\n");

@@ -1,0 +1,6 @@
+>Aptamer
+UACCUGGUACGGGGG
+**********xxxxx
+>ssRNA
+CUCGGCCUUACCCCC
+**********xxxxx

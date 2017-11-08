@@ -63,3 +63,14 @@ UUCUCAUUUCGACACCGAAGCAGAG
 3. For one aptamer and one ssRNA and one dsRNA (universal sticky bridge)
 ./AptaBlocks -N 2 -i ./Example/Input_universal_ssRNA_dsRNA.txt.txt -o ./Example/Output_universal_ssRNA_dsRNA.txt.txt 
 
+# Output file
+Take one aptamer and on ssRNA cargo for exampel, the output looks like:
+Aptamer: UACCUGGUACGCUGU # aptamer sequence + sticky brdige sequence B1
+RNA: CUCGGCCUUAACAGC # ssRNA sequence + sticky brdige sequence B2
+Probability with structure constraints: 0.90521 (<-probability of B1 unpaired) * 0.84481 (<-probability of B2 unpaired) = 0.76473 
+Probability with structure constraints: 0.765  log_2: -0.386975
+Energy of SE (converted in [0,1]): 0.619978 -5.710000 (<-hybridzation energy between B1 and B2) log_2: -0.689710
+Probability of inter-interactions: 1.000000 (<-probability of not forming into undesired dimers) log_2: 0.000000
+number of consective identical: 0.000000
+GC content: gcc_apta=0.600000, gcc_rna=0.600000, log_2(gcc_apta*gcc_rna)=-1.473931
+Overall objectives: -1.076686

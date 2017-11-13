@@ -16,9 +16,9 @@ $ ./AptaBlocks -h
 
 ## Input file format
 1. All sequences are from 5'- -3'
-2. `Aptamer` is a keyword to indicate the following is the sequence of an aptamer+stikcy bridge
-3. `ssRNA` is a keyword to indicate the following is a ssRNA + stikcy bridge
-4. `dsRNA` is a keyword to indicate the following is a dsRNA + stikcy bridge
+2. `Aptamer` is a keyword to indicate the following is the sequence of an aptamer+sticky bridge
+3. `ssRNA` is a keyword to indicate the following is a ssRNA + sticky bridge
+4. `dsRNA` is a keyword to indicate the following is a dsRNA + sticky bridge
 5. `*` indicates known bases and `x` denotes unknown sticky bridge sequences
 6. sticky bridges need to be complementary in the input file
 

@@ -1398,7 +1398,7 @@ void Potts_ModelM(struct SE_Design SED[], struct Parameters Param, int NumPairs,
                     Sweep_SE_M(SED, Param, NumPairs, Tc);
                     break;
                 case 1:
-                    Sweep_Spacer_M(SED, Param, NumPairs, Tc);
+                    Sweep_SE_M(SED, Param, NumPairs, Tc);//Sweep_Spacer_M(SED, Param, NumPairs, Tc);
                     break;
                     
                 default:

@@ -19,15 +19,15 @@ $ ./AptaBlocks -h
 2. `Aptamer` is a keyword to indicate the following is the sequence of an aptamer+sticky bridge
 3. `ssRNA` is a keyword to indicate the following is a ssRNA + sticky bridge
 4. `dsRNA` is a keyword to indicate the following is a dsRNA + sticky bridge
-5. `*` indicates known bases and `x` denotes unknown sticky bridge sequences
+5. `*` indicates known bases and `x` denotes unknown sticky bridge sequences ('.' denotes something that would not bind to anything)
 6. sticky bridges need to be complementary in the input file
 
 ### Input file examples
 Designing 5nt sticky bridge for one aptamer (UACCUGGUAC) and one ssRNA cargo (CUCGGCCUUA). (./Example/Input_ssRNA_cargo.txt)
 ```
 >Aptamer
-UACCUGGUACGGGGG
-**********xxxxx
+UACCUGGUACoooGGGGG
+**********...xxxxx
 >ssRNA
 CUCGGCCUUACCCCC
 **********xxxxx

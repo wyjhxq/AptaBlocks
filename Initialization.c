@@ -1,5 +1,6 @@
 #include "Initialization.h"
 #include  "part_func_up.h"
+#include  "part_func.h"
 
 int Length_Seq(char *structure){
     int len;
